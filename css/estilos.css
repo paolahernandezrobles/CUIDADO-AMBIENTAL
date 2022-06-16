@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .titulo{
@@ -33,11 +34,32 @@ header {
     background-attachment: fixed;
     position: relative;
 }
-div{
+nav>button{
     text-align: center;
-    padding: 30px 20px 0 0;
 }
-div>a{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+button{
+color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    background:#638cb5;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(4, 28, 82);
+    transition: 0.5s;
+    color: rgb(255, 253, 253);
+}
+li{
+    display: inline;
+    float: left;
+}
+
+#Nuestroambiente{
+    padding: 100px;
 }
