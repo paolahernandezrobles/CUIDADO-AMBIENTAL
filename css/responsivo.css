@@ -1,0 +1,35 @@
+
+/*
+  max-width   anchura máxima
+  min-width   anchura mínima
+  max-height  altura máxima
+  min-height  altura mínima
+*/
+
+@media screen and (max-width: 871px) {
+   #titulo{
+    text-align: center;
+    }
+    .img{
+        margin:10px 0 0 140px ;
+    }
+  }
+  
+  @media screen and (max-width: 754px) {
+    .img{
+        margin: 10px 0 0 50px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 380px) {
+    #titulo{
+      display: none; 
+        
+    }
+    .img{
+     width: 300px;
+     height: 300px;
+     margin: 0px  10px 50px;
+    }
+  }
