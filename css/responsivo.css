@@ -11,21 +11,23 @@
     text-align: center;
     }
     .img{
-        margin:10px 0 0 140px ;
+        margin:10px 0 0 110px ;
     }
   }
   
-  @media screen and (max-width: 754px) {
-    .img{
-        margin: 10px 0 0 50px;
+  @media screen and (max-width: 754px)  { 
+  .img{
+    margin : 0px 60px 0px;
     }
-  
   }
-  
   @media screen and (max-width: 380px) {
     #titulo{
       display: none; 
         
+    }
+    button{
+      font-size: 20px;
+      padding: 3px;
     }
     .img{
      width: 300px;
