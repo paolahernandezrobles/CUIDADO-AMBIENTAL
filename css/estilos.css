@@ -329,3 +329,10 @@ body.dark div#boton-seleccionado {
 body.dark #titulo {
     color: #fff;
 }
+body.dark h2{
+    color: #fff;
+}
+body.dark .gallery__picture::before{
+    background-color:  rgba(64, 224, 208, 0.555);
+    color: #000;
+}

@@ -47,6 +47,8 @@
     }
     img.logo{
       width: 150px;
+      
+      
     }
     .gallery{
       grid-template-columns: 1fr 1fr;
@@ -59,4 +61,30 @@
      "img14 img15"
      "img16 img12";
     }
+    .i{
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      display: block;
+      padding: 0;
+      margin: 0;
   }
+  .switch::after{
+    
+    width: 25px;
+    height: 25px;
+
+}
+a{
+  font-size: 15px;
+  margin: 0;
+}
+nav{
+  background: #ffffff;
+  align-items: baseline;
+  align-items: center;
+  
+ 
+ 
+ }
+}
