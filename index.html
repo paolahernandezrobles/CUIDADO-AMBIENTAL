@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e12827a1f2.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="vistas/cajas.html">
     <link rel="shortcut icon" href="img/GREEN_PLANET-removebg-preview.png" type="image/x-icon">
@@ -12,24 +13,35 @@
 <body>
     <header>
         <div id="logo">
+            <nav>
         <img src="img/20220704_151511_0000_2-removebg-preview.png" alt="logo" class="logo">
-        <a href="/vistas/cajas.html"> <img src="/img/round_image_black_24dp.png" alt=""></a>
-        <a href="/index.html"><img src="/img/round_home_black_24dp.png" alt=""></a>  
-
-       </nav>
+        <div class="enlaces">
+         <a href="/index.html"><b>inicio</b></a>
+         <a href="/vistas/cajas.html"><b>galeria</b></a>
         </div>
+            <button id="switch"class="switch">
+            <span class="i"><i class="fa-solid fa-sun"></i></span>
+            <span class="i"><i class="fa-solid fa-moon"></i></span>
+         </button>
+         
+        </nav>
+        </div>   
+       
         <h1 id="titulo">Sé parte de la solución 
             no parte de la contaminación</h1>
-        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 390.79,-59.69 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 390.79,-59.69 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+              </svg></div>
       </header>
       <div id="lista">
-        <nav>
+        
             <button>Nuestro ambiente</button>
-            <button onclick="cambiar_Biodivercidad">Biodievercidad</button>
+            <button>Biodievercidad</button>
             <button>Cambio climatico</button>
             <button>Calentamiento Global</button>
-        </nav>
-        </div>
+       
+       
      <main>
         <section>
          <div id="boton-seleccionado" class="fondo">
@@ -40,16 +52,16 @@
                Sin darnos cuenta disponemos de un amplio catálogo de métodos con el que hemos intervenido el planeta. Es tal la variedad de productos nocivos que emitimos, tan diversos los medios que contaminamos y tantas las especies que ponemos en peligro, que resulta arduo inventariar y comprender en su totalidad la multiplicidad de medios y factores que intervienen en el daño. Más difícil aún, por no decir imposible, predecir el impacto 
                que tendrá la sumatoria de sus efectos sobre la Tierra y sus habitantes en términos de 50 o 100 años.
             </i></p>
-            <p><span>1</span>
+            <p><span class="p">1</span>
                 <b>En los suelos:</b> inyectamos todo tipo de sustancias que pueden ser muy tóxicas y peligrosas. Introducimos fertilizantes, plaguicidas, pesticidas, residuos sólidos, metales pesados, contaminantes radioactivos. Las lluvias ácidas inyectan sustancias tóxicas en la tierra, productos nocivos en los terrenos de pueblos y ciudades. Inyectamos contaminantes en los suelos agrícolas y pecuarios, campamentos mineros,
                      en llanos, montañas, bosques, playas, glaciares o desiertos y hasta en nuestros pequeños jardines.    
             </p>
-            <p><span>2</span>
+            <p><span class="p">2</span>
                 <b>En las aguas:</b> Las inyecciones abarcan océanos, mares, lagos, lagunas, ríos y estanques. Los contaminantes comprenden todo tipo de sustancias y materiales. Lanzar una bolsa de plástico al mar es un acto de inyección, al igual que una lata de refresco a un río. Muchas ciudades inyectan en ríos y mares grandes volúmenes de material fecal, microorganismos patógenos, detergentes, gases insolubles, todo tipo de basura, escombros, vidrios, microplásticos y objetos de plástico de un solo uso.
                 Las aguas residuales de los vertederos industriales contienen aceites, fosfatos, nitratos, fluoruros, plomo, arsénico, selenio, cadmio, manganeso, mercurio y hasta sustancias radioactivas. Otro tipo de inyecciones muy letales son los derrames petroleros. Muchos de estos contaminantes pueden tardar cientos y hasta miles de años en ser reciclados por la naturaleza.
                 La Inyección de plásticos en los océanos es tan grave que se han encontrado objetos de este material en profundidades hasta hace poco inimaginables. Utilizando robots, un equipo británico recientemente ha localizado en la fosa de las Marianas y la fosa de Kermadec, ambas en el Océano Pacífico, pero separadas por unos 7.000 kilómetros, sumideros de plásticos en los más remotos y hostiles hábitats. Una bolsa plástica fue hallada en la Fosa de las Marianas, a 10.898 metros, cercana a la máxima profundidad marina de la Tierra. Los humanos hemos alcanzado las cotas más impensables con nuestros desechos. El agravante es que estos objetos de plásticos son de un solo uso y tardan siglos en degradarse.
             </p>
-            <p><span>3</span>
+            <p><span class="p">3</span>
                 <b>En los espacios terrestres:</b> El método de invasión más extendido es el desplazamiento de plantas y animales de sus hábitats terrestres por los humanos. Invadimos bosques y selvas, valles y montañas, pampas y llanos, islas y playas, taigas y tundras para construir pueblos, ciudades, campamentos vacacionales, campos mineros, tierras agrícolas y ganaderas, que antes pertenecían a otras especies
                 Hemos invadido millones de kilómetros cuadrados de ecosistemas y destruidos hábitats milenarios para dar paso a tierras agrícolas y sabanas para criar ganado con el fin de producir alimentos para casi ocho mil millones de humanos, tan enormes que se pierden en el infinito.
             </p>

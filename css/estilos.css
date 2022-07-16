@@ -8,15 +8,18 @@
     box-sizing: border-box;
 }
 
-#titulo{
+#titulo {
     font-size: 60px;
     padding: 160px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 
 }
+
 #titulo:hover {
     cursor: pointer;
+    color: #fff;
+    transition: .26s ease all;
 }
 
 body {
@@ -50,18 +53,23 @@ header {
     position: relative;
 
 }
- 
-.wave{
+
+.wave {
     position: absolute;
     bottom: 0;
     width: 100%;
+
+}
+
+path {
+    fill: #fff;
 }
 
 #lista {
     text-align: center;
 }
 
-button {
+#lista button {
     color: rgb(14, 13, 13);
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -76,32 +84,42 @@ button {
     border-bottom-style: solid;
     text-align: center;
 }
-button:hover{
+
+#lista button:hover {
     background-color: #6d83fe;
     transition: 0.5s;
     color: rgb(255, 255, 255);
     border-color: #ffffff;
 
 }
-.fondo{
+
+.fondo {
     background-color: #8a8686a8;
     border-radius: 20px;
 }
+nav{
+ background: #ffffff;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 15px 20px;
+ height: 85px;
 
-a{
-    color: #fff;
-    float: right;
-    padding: 9px;
-    margin: 20px 0 0 0;
-    border-radius: 8px;
-    text-decoration: none
 }
-a:hover{
+.enlaces{
+    display: flex;
+    align-items: center;
+}
+a {
+   margin-right: 40px;
+   color: #000000;
+   text-decoration: none;
+   padding: 19px;
+}
+
+a:hover {
     background-color: hsla(0, 2%, 53%, 0.281);
-}
-a img{
-    width: 25px;
-    color: #fff;
+    border-radius: 8px;
 }
 
 h2 {
@@ -110,106 +128,204 @@ h2 {
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-div#logo{
-    text-align: left;
-   background: #ffffff;
-    width: 100%;
-    height: 85px;
-    
 
+div#logo {
+    text-align: left;
+    width: 100%;
 }
-img.logo{
+
+img.logo {
     width: 250px;
     padding: 5px;
-
-    }  
-p span{
-  background: #121e61;
-  color: #fff;
-  border-radius: 100%;
-  display: inline-block;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  padding: 2px;
 }
-div#boton-seleccionado{
+
+.p {
+    background: #121e61;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+div#boton-seleccionado {
     text-align: center;
 }
-img.imagen{
+
+img.imagen {
     border-radius: 10px;
     margin: 50px 0 0 0;
 }
 
-.gallery{
+.gallery {
     padding-bottom: 3em;
     padding-top: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 160px;
-    grid-template-areas: 
-    "img1 img9 img7 img4"
-    "img1 img9 img6 img8"
-    "img1 img2 img3 img8"
-    "img11 img2 img10 img5"
-    "img14 img15 img15 img12"
-    "img16 img15 img15 img12";
+    grid-template-areas:
+        "img1 img9 img7 img4"
+        "img1 img9 img6 img8"
+        "img1 img2 img3 img8"
+        "img11 img2 img10 img5"
+        "img14 img15 img15 img12"
+        "img16 img15 img15 img12";
     gap: .8em;
 }
-.gallery img{
+
+.gallery img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
 }
-.gallery__picture{
+
+.gallery__picture {
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
 
-.gallery__picture::before{
+.gallery__picture::before {
     border-radius: 8px;
-  content:"GREEN PLANET";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #2766759d;
-  transform: translate(100%);
-  transition: trasform .3s;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+    content: "GREEN PLANET";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2766759d;
+    transform: translate(100%);
+    transition: trasform .3s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
-.gallery__picture:hover::before{
+
+.gallery__picture:hover::before {
     transform: translate(0);
 }
-.gallery_picture--g1{
+
+.gallery_picture--g1 {
     grid-area: img1;
 }
-.gallery_picture--g2{
+
+.gallery_picture--g2 {
     grid-area: img3;
 }
-.gallery_picture--g3{
-grid-area: img2;
+
+.gallery_picture--g3 {
+    grid-area: img2;
 }
-.gallery_picture--g5{
+
+.gallery_picture--g5 {
     grid-area: img6;
 }
-.gallery_picture--g8{
+
+.gallery_picture--g8 {
     grid-area: img8;
 }
-.gallery_picture--g9{
+
+.gallery_picture--g9 {
     grid-area: img9;
 }
-.gallery_picture--g15{
+
+.gallery_picture--g15 {
     grid-area: img12;
 
 }
-.gallery_picture--g12{
+
+.gallery_picture--g12 {
     grid-area: img15;
 }
 
+.switch{
+    background: #5b5c5c8e;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.switch::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 1000px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active{
+ background: rgba(64, 224, 208, 0.555);
+ color: #fff;
+}
+.active::after{
+    right: 0;
+    left: unset;
+}
+
+body.dark {
+    background-color: #383838;
+    transition: .3s ease all;
+}
+
+body.dark nav {
+    background: #383838;
+}
+
+body.dark .fondo {
+    background: rgba(64, 224, 208, 0.555);
+}
+
+body.dark button {
+    background: rgba(64, 224, 208, 0.555);
+}
+
+body.dark div#logo {
+    background: #383838;
+    border: none;
+    color: white;
+}
+
+body.dark button:hover {
+    background: #9fa0a1;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    border-bottom: none;
+
+
+}
+
+body.dark nav button {
+    color: white;
+}
+
+body.dark path {
+    fill: #383838;
+}
+
+body.dark div#boton-seleccionado {
+    color: white;
+}
+
+body.dark #titulo {
+    color: #fff;
+}
