@@ -81,10 +81,33 @@ a{
 }
 nav{
   background: #ffffff;
-  align-items: baseline;
-  align-items: center;
   
  
  
  }
+}
+@media screen and (max-width: 200px){
+  img.logo{
+   width: 100px;
+    
+    
+  }
+  a{
+    display: none;
+  }
+  .i{
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.switch::after{
+    
+  width: 15px;
+  height: 15px;
+
+}
 }
