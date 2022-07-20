@@ -12,14 +12,12 @@
     font-size: 60px;
     padding: 160px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 
 }
 
 #titulo:hover {
     cursor: pointer;
-    color: #fff;
-    transition: .26s ease all;
 }
 
 body {
@@ -111,10 +109,11 @@ nav{
     align-items: center;
 }
 a {
-   margin-right: 40px;
+   margin: 0;
    color: #000000;
    text-decoration: none;
    padding: 19px;
+   
 }
 
 a:hover {
@@ -132,6 +131,7 @@ h2 {
 div#logo {
     text-align: left;
     width: 100%;
+    margin: 0;
 }
 
 img.logo {
@@ -158,6 +158,7 @@ img.imagen {
     border-radius: 10px;
     margin: 50px 0 0 0;
 }
+/*galeria*/
 
 .gallery {
     padding-bottom: 3em;
@@ -242,6 +243,7 @@ img.imagen {
     grid-area: img15;
 }
 
+/*modonoche*/
 .switch{
     background: #5b5c5c8e;
     border-radius: 1000px;
@@ -252,12 +254,13 @@ img.imagen {
     outline: none;
 }
 .i{
-    width: 40px;
+    width: 50px;
     height: 40px;
     line-height: 40px;
     display: block;
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
 .switch::after{
     content: "";
@@ -274,7 +277,7 @@ img.imagen {
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .switch.active{
- background: rgba(64, 224, 208, 0.555);
+ background:rgba(64, 224, 208, 0.315);
  color: #fff;
 }
 .active::after{
@@ -283,20 +286,20 @@ img.imagen {
 }
 
 body.dark {
-    background-color: #383838;
+    background-color: #575555;
     transition: .3s ease all;
 }
 
 body.dark nav {
-    background: #383838;
+    background: #575555;
 }
 
 body.dark .fondo {
-    background: rgba(64, 224, 208, 0.555);
+    background: rgba(64, 224, 208, 0.315);
 }
 
 body.dark button {
-    background: rgba(64, 224, 208, 0.555);
+    background: rgba(64, 224, 208, 0.315);
 }
 
 body.dark div#logo {
@@ -315,24 +318,33 @@ body.dark button:hover {
 }
 
 body.dark #lista button {
-    color: white;
+    color: #242323;
+    background:  rgba(64, 224, 208, 0.315);
+}
+body.dark #lista button:hover{
+    background: #b7b8b8fd;
+    color: #000;
+    border: none;
 }
 
 body.dark path {
-    fill: #383838;
+    fill: #575555;
 }
 
 body.dark div#boton-seleccionado {
-    color: white;
+    color: #0f0202;
 }
 
 body.dark #titulo {
-    color: #fff;
+    color: rgb(14, 4, 4);
 }
 body.dark h2{
-    color: #fff;
+    color: #242323;
 }
 body.dark .gallery__picture::before{
-    background-color:  rgba(64, 224, 208, 0.555);
+    background-color:  rgba(64, 224, 208, 0.315);
     color: #000;
+}
+body.drk span.p{
+    background: #00f721;
 }
