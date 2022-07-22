@@ -95,6 +95,9 @@ path {
     background-color: #8a8686a8;
     border-radius: 20px;
 }
+p {
+    padding: 0 0 20px 0;
+}
 nav{
  background: #ffffff;
  display: flex;
@@ -137,17 +140,6 @@ div#logo {
 img.logo {
     width: 250px;
     padding: 5px;
-}
-
-.p {
-    background: #121e61;
-    color: #fff;
-    border-radius: 100%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
 }
 
 div#boton-seleccionado {
