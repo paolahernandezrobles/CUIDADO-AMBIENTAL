@@ -13,24 +13,10 @@
     }
   }
   
-  @media screen and (min-width: 768px) and (max-widt: 1023px){
+  @media screen and (min-width: 768px){
     #titulo{
-      font-size: 40px;
+      font-size: 50px;
     }
-    .gallery{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "img1 img10"
-    "img1 img4"
-    "img6 img8"
-   "img3 img8"
-   "img11 img2"
-   "img9 img15"
-   "img9 img15"
-   "img12 img13"
-   "img12 img14";
-    
-  }
   }
   @media screen and (max-width: 767px)  {
     #titulo{
@@ -61,6 +47,7 @@
      "img11 img2"
      "img14 img15"
      "img16 img12";
+     margin: 10px;
     }
     .i{
       width: 15px;
@@ -80,11 +67,9 @@ a{
   font-size: 14px;
   margin: 0;
 }
-nav{
-  background: #ffffff;
-  
- 
- 
- }
+footer img{
+  width: 300px;
+  margin: 20px;
+}
 }
 
