@@ -1,4 +1,3 @@
-
 /*
   max-width   anchura máxima
   min-width   anchura mínima
@@ -7,69 +6,91 @@
 */
 
 @media screen and (min-width: 1024px) {
-   #titulo{
+  #titulo {
     text-align: center;
     font-size: 40px;
-    }
   }
-  
-  @media screen and (min-width: 768px){
-    #titulo{
-      font-size: 50px;
-    }
+}
+
+@media screen and (min-width: 768px) {
+  #titulo {
+    font-size: 50px;
   }
-  @media screen and (max-width: 767px)  {
-    #titulo{
-      display: none; 
-        
-    }
-    #lista button{
-      font-size: 19px;
-      padding: 19px;
-    }
-    img.imagen{
-     width: 250px;
-     height: 250px;
-     margin: 10px;
-    }
-    img.logo{
-      width: 130px;
-      
-      
-    }
-    .gallery{
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 
-      "img1 img9"
-      "img7 img4"
-      "img6 img8"
-     "img3 img10"
-     "img11 img2"
-     "img14 img15"
-     "img16 img12";
-     margin: 10px;
-    }
-    .i{
-      width: 15px;
-      height: 15px;
-      line-height: 15px;
-      font-size: 10px;
-      display: block;
-      padding: 0;
-      margin: 0;
+  div#gallery {
+    -webkit-column-count :2;
+  -moz-column-count : 2;
+   column-count : 2;
+  -webkit-column-gap : 2em;
+  -moz-column-gap : 2em;
+  column-gap : 2cm;
+    margin: 30px;
   }
-  .switch::after{
+  div.gallery__picture {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #titulo {
+    display: none;
+
+  }
+
+  #lista button {
+    font-size: 19px;
+    padding: 19px;
+  }
+
+  img.imagen {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  img.logo {
+    width: 130px;
+
+
+  }
+
+  div#gallery {
+    -webkit-column-count :1;
+  -moz-column-count : 1;
+   column-count : 1;
+  -webkit-column-gap : 2em;
+  -moz-column-gap : 2em;
+  column-gap : 2cm;
+    margin: 30px;
+  }
+
+  div.gallery__picture {
+    width: 100%;
+  }
+
+  .i {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .switch::after {
     width: 15px;
     height: 15px;
 
-}
-a{
-  font-size: 14px;
-  margin: 0;
-}
-footer img{
-  width: 300px;
-  margin: 20px;
-}
-}
+  }
 
+  a {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  footer img {
+    width: 300px;
+    margin: 20px;
+  }
+}
