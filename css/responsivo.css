@@ -53,6 +53,9 @@
 
 
   }
+  p {
+    padding: 0 20px 20px;
+}
 
   div#gallery {
     -webkit-column-count :1;
@@ -66,7 +69,12 @@
 
   div.gallery__picture {
     width: 100%;
+    transition: 0.5s;
   }
+  div.gallery__picture:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+ }
 
   .i {
     width: 15px;
